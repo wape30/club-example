@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <router-link :to="{ name: 'DisplayItem' }" class="navbar-brand">
-        VuejsNode
+        Club Elite
       </router-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

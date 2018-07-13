@@ -10,11 +10,13 @@ import App from './App.vue';
 import CreateItem from './components/CreateItem.vue';
 import DisplayItem from './components/DisplayItem.vue';
 import EditItem from './components/EditItem.vue';
+import AppLogin from './components/AppLogin.vue';
+import AdminHome from './components/AdminHome.vue';
 
 const routes = [
   {
     name: 'DisplayItem',
-    path: '/',
+    path: '/item',
     component: DisplayItem
   },
   {
@@ -26,6 +28,19 @@ const routes = [
     name: 'EditItem',
     path: '/edit/:id',
     component: EditItem
+  },
+  //rutas y componenetes del login
+  {
+    name: 'AppLogin',
+    path: '/login',
+    component: AppLogin
+  },
+
+  //Rutas y componenetes del administrador
+  {
+    name: 'AdminHome',
+    path: '/',
+    component: AdminHome
   }
 ];
 

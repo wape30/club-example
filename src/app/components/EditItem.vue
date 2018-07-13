@@ -23,7 +23,7 @@
       <div class="form-group">
         <button class="btn btn-primary">Update</button>
       </div>
-    </form>    
+    </form>
   </div>
 </template>
 
@@ -43,7 +43,7 @@ export default{
   methods: {
     getItem()
     {
-      let uri = 'http://localhost:4000/items/edit/' + this.$route.params.id;
+      let uri = '/items/edit/' + this.$route.params.id;
       this.axios.get(uri).then((response) => {
         this.item = response.data;
       });
@@ -51,7 +51,7 @@ export default{
 
     updateItem()
     {
-      let uri = 'http://localhost:4000/items/update/' + this.$route.params.id;
+      let uri = '/items/update/' + this.$route.params.id;
       this.axios.post(uri, this.item).then((response) => {
         this.$router.push({name: 'DisplayItem'});
       });

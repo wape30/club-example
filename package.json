@@ -6,6 +6,7 @@
   "scripts": {
     "webpack:prod": "npm run webpack:clean && webpack -p",
     "webpack": "webpack",
+    "webpack:watch": "webpack -w",
     "webpack:clean": "rm -rf ./src/public/js",
     "webpack:dev": "webpack-dev-server",
     "dev": "concurrently \"nodemon ./src/server.js --ignore app/ \" \" webpack -w\"",
@@ -38,6 +39,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "mongoose": "^4.13.5",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "vuetify": "^1.1.4"
   }
 }

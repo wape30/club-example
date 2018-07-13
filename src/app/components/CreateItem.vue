@@ -36,7 +36,7 @@
     },
     methods: {
       addItem(){
-        let uri = 'http://localhost:4000/items/add';
+        let uri = '/items/add';
         this.axios.post(uri, this.item).then((response) => {
           console.log(response);
           toastr.success(response.data.item, 'Response');
