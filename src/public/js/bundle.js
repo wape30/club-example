@@ -15692,7 +15692,7 @@ exports = module.exports = __webpack_require__(38)(undefined);
 
 
 // module
-exports.push([module.i, "\n.fade-enter-active .fade-leave-active {\n  transition: opacity .5s;\n}\n.fade-enter .fade-leave-active {\n  transition: 0;\n}\n", ""]);
+exports.push([module.i, "\n.fade-enter-active .fade-leave-active {\n  transition: opacity .5s;\n}\n.fade-enter .fade-leave-active {\n  transition: 0;\n}\n\n", ""]);
 
 // exports
 
@@ -16078,6 +16078,21 @@ module.exports = function listToStyles (parentId, list) {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({});
 
@@ -16093,7 +16108,7 @@ var render = function() {
   return _c("div", [
     _c(
       "nav",
-      { staticClass: "navbar navbar-expand-md navbar-light bg-light" },
+      { staticClass: "navbar navbar-expand-md navbar-dark bg-dark" },
       [
         _c(
           "router-link",
@@ -16106,6 +16121,8 @@ var render = function() {
         _vm._v(" "),
         _vm._m(0, false, false),
         _vm._v(" "),
+        _vm._m(1, false, false),
+        _vm._v(" "),
         _c(
           "div",
           {
@@ -16113,7 +16130,7 @@ var render = function() {
             attrs: { id: "navbarNav" }
           },
           [
-            _c("ul", { staticClass: "navbar-nav" }, [
+            _c("ul", { staticClass: "navbar-nav ml-auto" }, [
               _c(
                 "li",
                 { staticClass: "nav-item active" },
@@ -16136,7 +16153,7 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "col-lg-12" }, [
       _c(
         "div",
         [_c("transition", { attrs: { name: "fade" } }, [_c("router-view")], 1)],
@@ -16165,6 +16182,33 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon" })]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "navbar-nav" }, [
+      _c("li", { staticClass: "nav-item" }, [
+        _c(
+          "form",
+          { staticClass: "form-inline", attrs: { action: "/action_page.php" } },
+          [
+            _c("input", {
+              staticClass: "form-control mr-sm-2",
+              attrs: { type: "text", placeholder: "Search" }
+            }),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-success", attrs: { type: "submit" } },
+              [_vm._v("Search")]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("li")
+    ])
   }
 ]
 render._withStripped = true
@@ -27606,22 +27650,28 @@ if (Component.esModule && Object.keys(Component.esModule).some(function (key) { 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3aceeb6e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_AdminHome_vue__ = __webpack_require__(57);
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(58)
+}
 var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = null
+
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __vue_script__,
-  __vue_template__,
+  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3aceeb6e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_AdminHome_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -27630,7 +27680,726 @@ var Component = normalizeComponent(
 Component.options.__file = "src\\app\\components\\AdminHome.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
 
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3aceeb6e", Component.options)
+  } else {
+    hotAPI.reload("data-v-3aceeb6e", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
 /* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0, false, false)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-xl-12", staticStyle: { padding: "20px 0 0 0" } },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-2 tamaño" }, [
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#FBB829" }
+              },
+              [_c("h2", [_vm._v("Administrador")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#616266" }
+              },
+              [
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [_vm._v("Estadisticas")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Socios")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Empresas")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Entrenadores")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [_vm._v("Configuracion")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Seguridad")])
+                ]),
+                _vm._v(" "),
+                _c("br")
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-5 tamaño" }, [
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#ffffff" }
+              },
+              [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-4" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "container",
+                        staticStyle: { "background-color": "#000000" }
+                      },
+                      [
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("br")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-8" }, [
+                    _c("h5", { staticStyle: { color: "#FBB829" } }, [
+                      _vm._v("N0MBRE DEL EQUIPO")
+                    ]),
+                    _vm._v(" "),
+                    _c("h6", [_vm._v("Cali Colombia")]),
+                    _vm._v(" "),
+                    _c("h6", [_vm._v("Elite #")]),
+                    _vm._v(" "),
+                    _c("p", [_vm._v("Vision:")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Not supported in HTML5.\r\nSpecifies that a  element should render in one solid color (noshaded), instead of a shaded color"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("table", { staticClass: "table table-borderless" }, [
+                      _c("tbody", [
+                        _c("tr", [
+                          _c("td", { staticStyle: { color: "#FBB829" } }, [
+                            _vm._v("Coordinador:")
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("July")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("july@example.com")])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", { staticStyle: { color: "#FBB829" } }, [
+                            _vm._v("Capitan:")
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Moe")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("mary@example.com")])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", { staticStyle: { color: "#FBB829" } }, [
+                            _vm._v("Estado:")
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Dooley")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("dooley@example.com")])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#ffffff" }
+              },
+              [
+                _c("h4", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("10 Miembros registrados")
+                ]),
+                _c("hr"),
+                _vm._v(" "),
+                _c("table", { staticClass: "table table-borderless" }, [
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del usuario")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Estado del registro")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("Cel: 3005069812")
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del usuario")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Estado del registro")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("Cel: 3005069812")
+                            ])
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del usuario")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Estado del registro")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("Cel: 3005069812")
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del usuario")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Estado del registro")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("Cel: 3005069812")
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-3 tamaño" }, [
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#ffffff" }
+              },
+              [
+                _c("table", { staticClass: "table table-borderless menu1" }, [
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Foto de Perfil:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Subir")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Nombre:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Apellidos:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Escarapela:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("E-mail:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Cédula:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Dirección:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("País:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Elegir")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Ciudad:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Elegir")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Celular:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Otro Número:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Género:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Elegir")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Fecha:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [
+                          _vm._v("Elegir(dd/mm/aaaa)")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Alimentación:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Cuidados:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet, co nsectetuer adipiscing elit, minim veniam"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("table", { staticClass: "table table-borderless menu1" }, [
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Ángel:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Salto Cuántico:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("hr"),
+                _vm._v(" "),
+                _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("Estado de Registro")
+                ]),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")]),
+                _c("hr"),
+                _vm._v(" "),
+                _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("Contrato:")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna."
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-warning btn-block",
+                    attrs: { type: "button" }
+                  },
+                  [_vm._v("Registrar")]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-2 tamaño" }, [
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#808080" }
+              },
+              [_c("h4", [_vm._v("Novedades")])]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "list-group" }, [
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("First item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Second item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3aceeb6e", esExports)
+  }
+}
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(59);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(39)("1562d8d0", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3aceeb6e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminHome.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3aceeb6e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AdminHome.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(38)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\nbody {\r\n    background-color: #AAACB2;\n}\nli{\r\n    color: #ffffff;\n}\ntable[class~=\"menu1\"] td{\r\n        padding : 0.2rem;\n}\ndiv[class~=\"tamaño\"]{\r\n    padding:6px;\n}\na{\r\n    color: #666666;\n}\r\n", ""]);
+
+// exports
 
 
 /***/ })
