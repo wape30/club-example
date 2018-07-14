@@ -12,6 +12,7 @@ import DisplayItem from './components/DisplayItem.vue';
 import EditItem from './components/EditItem.vue';
 import AppLogin from './components/AppLogin.vue';
 import AdminHome from './components/AdminHome.vue';
+import UserHome from './components/UserHome.vue';
 
 const routes = [
   {
@@ -39,8 +40,13 @@ const routes = [
   //Rutas y componenetes del administrador
   {
     name: 'AdminHome',
-    path: '/',
+    path: '/admin',
     component: AdminHome
+  },
+  {
+    name: 'UserHome',
+    path: '/',
+    component: UserHome
   }
 ];
 
