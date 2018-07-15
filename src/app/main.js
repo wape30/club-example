@@ -33,7 +33,7 @@ const routes = [
   //rutas y componenetes del login
   {
     name: 'AppLogin',
-    path: '/login',
+    path: '/',
     component: AppLogin
   },
 
@@ -45,7 +45,7 @@ const routes = [
   },
   {
     name: 'UserHome',
-    path: '/',
+    path: '/user',
     component: UserHome
   }
 ];

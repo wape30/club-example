@@ -1087,6 +1087,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_EditItem_vue__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_AppLogin_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_AdminHome_vue__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_UserHome_vue__ = __webpack_require__(60);
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
@@ -1094,6 +1095,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_axios___default.a, __WEBPACK_IMPORTED_MODULE_3_axios___default.a);
+
 
 
 
@@ -1118,15 +1120,19 @@ const routes = [{
 //rutas y componenetes del login
 {
   name: 'AppLogin',
-  path: '/login',
+  path: '/',
   component: __WEBPACK_IMPORTED_MODULE_8__components_AppLogin_vue__["a" /* default */]
 },
 
 //Rutas y componenetes del administrador
 {
   name: 'AdminHome',
-  path: '/',
+  path: '/admin',
   component: __WEBPACK_IMPORTED_MODULE_9__components_AdminHome_vue__["a" /* default */]
+}, {
+  name: 'UserHome',
+  path: '/user',
+  component: __WEBPACK_IMPORTED_MODULE_10__components_UserHome_vue__["a" /* default */]
 }];
 
 const router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({ mode: 'history', routes: routes });
@@ -27618,22 +27624,28 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e36793c6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_AppLogin_vue__ = __webpack_require__(64);
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(65)
+}
 var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = null
+
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __vue_script__,
-  __vue_template__,
+  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e36793c6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_AppLogin_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -27641,6 +27653,22 @@ var Component = normalizeComponent(
 )
 Component.options.__file = "src\\app\\components\\AppLogin.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-e36793c6", Component.options)
+  } else {
+    hotAPI.reload("data-v-e36793c6", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
 
 /* harmony default export */ __webpack_exports__["a"] = (Component.exports);
 
@@ -28398,6 +28426,879 @@ exports = module.exports = __webpack_require__(38)(undefined);
 
 // module
 exports.push([module.i, "\nbody {\r\n    background-color: #AAACB2;\n}\nli{\r\n    color: #ffffff;\n}\ntable[class~=\"menu1\"] td{\r\n        padding : 0.2rem;\n}\ndiv[class~=\"tamaño\"]{\r\n    padding:6px;\n}\na{\r\n    color: #666666;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_44146a9f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_UserHome_vue__ = __webpack_require__(63);
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(61)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = null
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_44146a9f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_UserHome_vue__["a" /* default */],
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src\\app\\components\\UserHome.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-44146a9f", Component.options)
+  } else {
+    hotAPI.reload("data-v-44146a9f", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(62);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(39)("b91e0fa6", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-44146a9f\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./UserHome.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-44146a9f\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./UserHome.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(38)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\nbody {\r\n    background-color: #AAACB2;\n}\nli{\r\n    color: #ffffff;\n}\ntable[class~=\"menu1\"] td{\r\n        padding : 0.2rem;\n}\ndiv[class~=\"tamaño\"]{\r\n    padding:6px;\n}\na{\r\n    color: #666666;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0, false, false)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-xl-12", staticStyle: { padding: "20px 0 0 0" } },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-2 tamaño" }, [
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#616266" }
+              },
+              [
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [_vm._v("Estadisticas")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Socios")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Empresas")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Entrenadores")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [_vm._v("Configuracion")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Seguridad")])
+                ]),
+                _vm._v(" "),
+                _c("br")
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-5 tamaño" }, [
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#ffffff" }
+              },
+              [
+                _c("table", { staticClass: "table table-borderless" }, [
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del equipo")
+                            ]),
+                            _vm._v(" "),
+                            _c("h6", [_vm._v("Cali, Colombia")]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Elite 2")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("95 Miembros")
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del equipo")
+                            ]),
+                            _vm._v(" "),
+                            _c("h6", [_vm._v("Cali, Colombia")]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Elite 2")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("95 Miembros")
+                            ])
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del equipo")
+                            ]),
+                            _vm._v(" "),
+                            _c("h6", [_vm._v("Cali, Colombia")]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Elite 2")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("95 Miembros")
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del equipo")
+                            ]),
+                            _vm._v(" "),
+                            _c("h6", [_vm._v("Cali, Colombia")]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Elite 2")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("95 Miembros")
+                            ])
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del equipo")
+                            ]),
+                            _vm._v(" "),
+                            _c("h6", [_vm._v("Cali, Colombia")]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Elite 2")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("95 Miembros")
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del equipo")
+                            ]),
+                            _vm._v(" "),
+                            _c("h6", [_vm._v("Cali, Colombia")]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Elite 2")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("95 Miembros")
+                            ])
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del equipo")
+                            ]),
+                            _vm._v(" "),
+                            _c("h6", [_vm._v("Cali, Colombia")]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Elite 2")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("95 Miembros")
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-2" }, [
+                            _c("div", {
+                              staticClass: "container",
+                              staticStyle: {
+                                "background-color": "#000000",
+                                "padding-right": "20px"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-8" }, [
+                            _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                              _vm._v("Nombre del equipo")
+                            ]),
+                            _vm._v(" "),
+                            _c("h6", [_vm._v("Cali, Colombia")]),
+                            _vm._v(" "),
+                            _c("p", [_vm._v("Elite 2")]),
+                            _vm._v(" "),
+                            _c("p", { staticStyle: { color: "#808080" } }, [
+                              _vm._v("95 Miembros")
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-3 tamaño" }, [
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#ffffff" }
+              },
+              [
+                _c("table", { staticClass: "table table-borderless menu1" }, [
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Coordinador:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [
+                          _vm._v("Andres Salazar")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Capitán:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [
+                          _vm._v("Felipe Hernandez")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { color: "#FBB829" } }, [
+                        _vm._v("Estado:")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("a", { attrs: { href: "" } }, [
+                          _vm._v("Maestria Nvl 1")
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                _c("hr"),
+                _vm._v(" "),
+                _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("Visión:")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("hr"),
+                _vm._v(" "),
+                _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("Legado:")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("hr"),
+                _vm._v(" "),
+                _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("Enrolamiento:")
+                ]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", { staticStyle: { color: "#000000" } }, [
+                    _vm._v("320 Vidas impactadas")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticStyle: { color: "#000000" } }, [
+                    _vm._v("7 Vuelos")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticStyle: { color: "#000000" } }, [
+                    _vm._v("250 Elevaciones")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticStyle: { color: "#000000" } }, [
+                    _vm._v("68 Angeles activos")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("hr"),
+                _vm._v(" "),
+                _c("h6", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("Salto cuantico:")
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v("10 Bailarinas")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-2 tamaño" }, [
+            _c(
+              "div",
+              {
+                staticClass: "container",
+                staticStyle: { "background-color": "#808080" }
+              },
+              [_c("h4", [_vm._v("Novedades")])]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "list-group" }, [
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("First item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Second item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "list-group-item list-group-item-action list-group-item-dark",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Third item")]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-44146a9f", esExports)
+  }
+}
+
+/***/ }),
+/* 64 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "col-xl-12", staticStyle: { padding: "20px 0 0 0" } },
+    [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-4" }, [
+          _c(
+            "div",
+            { staticClass: "container" },
+            [
+              _c("center", [
+                _c("h1", { staticStyle: { color: "#ffffff" } }, [
+                  _vm._v("Bienvenid@s")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Esta es tu plataforma de transformación, creación y progreso."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("¿Que meta extraordinario vas a cumplir hoy?")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control form-control",
+                attrs: { type: "text", placeholder: "Codigo de Usuario" }
+              }),
+              _vm._v(" "),
+              _c("a", { attrs: { href: "" } }, [
+                _vm._v("Otras formas de Ingreso")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control form-control",
+                attrs: { type: "text", placeholder: "Pín de Elite" }
+              }),
+              _vm._v(" "),
+              _c("a", { attrs: { href: "" } }, [
+                _vm._v("Olvide mi contraseña")
+              ]),
+              _vm._v(" "),
+              _c("center", [
+                _c("p", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("IR DIRECTO A:")
+                ])
+              ]),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-warning btn-block",
+                  attrs: { type: "button" }
+                },
+                [_vm._v("Inicio")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-warning btn-block",
+                  attrs: { type: "button" }
+                },
+                [_vm._v("Comunidad")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-warning btn-block",
+                  attrs: { type: "button" }
+                },
+                [_vm._v(" Negocios")]
+              ),
+              _vm._v(" "),
+              _c("br")
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "container" },
+            [
+              _c("center", [
+                _c("h1", { staticStyle: { color: "#ffffff" } }, [
+                  _vm._v("¿AUN NO ERES PARTE?")
+                ]),
+                _c("br"),
+                _vm._v(" "),
+                _c("p", { staticStyle: { color: "#ffffff" } }, [
+                  _vm._v(
+                    "Somos una comunidad comprometida con crear un mundo más amoroso, justo y poderoso."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("¿Listo para crear metas extraordínarias")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-warning btn-block",
+                    attrs: { type: "button" }
+                  },
+                  [_vm._v("Iniciar mi Entrenamiento")]
+                )
+              ])
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-8" },
+          [
+            _c("center", [
+              _c("b", [
+                _c("h1", [
+                  _vm._v(
+                    "ESTE ES UN MENSAJE MUY PODEROSO DE INVITACIÓN A SER PARTE DE LA COMUNIDAD MÁS PODEROSA DEL MUNDO DESDE EL "
+                  ),
+                  _c("h1", { staticStyle: { color: "#FBB829" } }, [
+                    _vm._v("AMOR")
+                  ]),
+                  _vm._v(" Y EL ")
+                ]),
+                _c("h1", { staticStyle: { color: "#FBB829" } }, [
+                  _vm._v("COMPROMISO")
+                ]),
+                _vm._v(".")
+              ])
+            ])
+          ],
+          1
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-e36793c6", esExports)
+  }
+}
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(66);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(39)("79dfbfae", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e36793c6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AppLogin.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e36793c6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./AppLogin.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(38)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\nbody{\r\n    background-image: url(\"https://picsum.photos/g/1600/1000\");\n}\ndiv[class~=\"container\"]{ \r\n    margin-left: 15px;\r\n    background: rgba(61, 62, 66, 0.5);\n}\r\n", ""]);
 
 // exports
 
