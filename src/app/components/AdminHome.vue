@@ -161,64 +161,83 @@ Specifies that a  element should render in one solid color (noshaded), instead o
     <tbody>
       <tr>
         <td style="color: #FBB829">Foto de Perfil:</td>
-        <td><a href="">Subir</a></td>
+        <td> <input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
          <td style="color: #FBB829">Nombre:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
          
         <td style="color: #FBB829">Apellidos:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
         <td style="color: #FBB829">Escarapela:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
         <td style="color: #FBB829">E-mail:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
         <td style="color: #FBB829">Cédula:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
         <td style="color: #FBB829">Dirección:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
         <td style="color: #FBB829">País:</td>
-        <td><a href="">Elegir</a></td>
+        <td><div class="form-group">
+        <select class="form-control borde" id="sel1">
+            <option>Elegir</option>
+            <option>Colombia</option>
+        </select>
+        </div></td>
       </tr>
       <tr>
         <td style="color: #FBB829">Ciudad:</td>
-        <td><a href="">Elegir</a></td>
+        <td><div class="form-group">
+        <select class="form-control borde" id="sel1">
+            <option>Elegir</option>
+            <option>Cali</option>
+            <option>Bogota</option>
+        </select>
+        </div></td>
       </tr>
       <tr>
         <td style="color: #FBB829">Celular:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
         <td style="color: #FBB829">Otro Número:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
         <td style="color: #FBB829">Género:</td>
-        <td><a href="">Elegir</a></td>
+        <td>
+            <div class="form-group">
+        <select class="form-control borde" id="sel1">
+            <option>Elegir</option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+        </select>
+        </div>
+    </td>
       </tr>
       <tr>
         <td style="color: #FBB829">Fecha:</td>
-        <td><a href="">Elegir(dd/mm/aaaa)</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar(dd/mm/aaaa)"></td>
       </tr>
       <tr>
         <td style="color: #FBB829">Alimentación:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
         <td style="color: #FBB829">Cuidados:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
     </tbody>
   </table>
@@ -227,18 +246,18 @@ Specifies that a  element should render in one solid color (noshaded), instead o
     <tbody>
       <tr>
         <td style="color: #FBB829">Ángel:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
       <tr>
          <td style="color: #FBB829">Salto Cuántico:</td>
-        <td><a href="">Agregar</a></td>
+        <td><input type="text" class="form-control form-control borde" placeholder="Agregar"></td>
       </tr>
 
     </tbody>
   </table>
   <hr>
   <h6 style="color: #FBB829">Estado de Registro</h6>
-  <a href="">Agregar</a><hr>
+  <input type="text" class="form-control form-control borde" placeholder="Agregar"><hr>
   <h6 style="color: #FBB829">Contrato:</h6>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at massa eros. Nullam a vulputate dolor. Quisque a metus ut quam eleifend aliquet non non urna.</p>
         <button type="button" class="btn btn-warning btn-block">Registrar</button>
@@ -286,49 +305,13 @@ table[class~="menu1"] td{
 div[class~="tamaño"]{
     padding:6px;
 }
+input[class~="borde"]{
+    border: none;
+}
+select[class~="borde"]{
+    border: none;
+}
 a{
     color: #666666;
 }
 </style>
-<!--
-<div class="row">
-    
-<div class="my-container col-sm-2" style="background-color: #FBB829">
-    <h2>Administrador</h2>
-<div class="row">
-        <div class="my-container col-xl-12" style="background-color: #616266">
-            <h1>Prueba</h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <ul>
-                <li>Estadisticas</li>
-                <li>Socios</li>
-                <li>Empresas</li>
-                <li>Entrenadores</li>
-            </ul>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <ul>
-                <li>Configuracion</li>
-                <li>Seguridad</li>
-            </ul>
-            <br>
-        </div>
-    </div>
-</div>
-<div class="col-sm-4" style="background-color: #ffffff">
-    <div class="container">
-        <h1>Prueba</h1>
-    </div>
-
-</div>
-</div> -->

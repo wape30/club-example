@@ -28044,7 +28044,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Subir")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28054,7 +28057,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28064,7 +28070,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28074,7 +28083,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28084,7 +28096,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28094,7 +28109,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28104,7 +28122,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28114,7 +28135,20 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Elegir")])
+                        _c("div", { staticClass: "form-group" }, [
+                          _c(
+                            "select",
+                            {
+                              staticClass: "form-control borde",
+                              attrs: { id: "sel1" }
+                            },
+                            [
+                              _c("option", [_vm._v("Elegir")]),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("Colombia")])
+                            ]
+                          )
+                        ])
                       ])
                     ]),
                     _vm._v(" "),
@@ -28124,7 +28158,22 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Elegir")])
+                        _c("div", { staticClass: "form-group" }, [
+                          _c(
+                            "select",
+                            {
+                              staticClass: "form-control borde",
+                              attrs: { id: "sel1" }
+                            },
+                            [
+                              _c("option", [_vm._v("Elegir")]),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("Cali")]),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("Bogota")])
+                            ]
+                          )
+                        ])
                       ])
                     ]),
                     _vm._v(" "),
@@ -28134,7 +28183,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28144,7 +28196,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28154,7 +28209,22 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Elegir")])
+                        _c("div", { staticClass: "form-group" }, [
+                          _c(
+                            "select",
+                            {
+                              staticClass: "form-control borde",
+                              attrs: { id: "sel1" }
+                            },
+                            [
+                              _c("option", [_vm._v("Elegir")]),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("Masculino")]),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("Femenino")])
+                            ]
+                          )
+                        ])
                       ])
                     ]),
                     _vm._v(" "),
@@ -28164,9 +28234,13 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [
-                          _vm._v("Elegir(dd/mm/aaaa)")
-                        ])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: {
+                            type: "text",
+                            placeholder: "Agregar(dd/mm/aaaa)"
+                          }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28176,7 +28250,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28186,7 +28263,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ])
                   ])
@@ -28206,7 +28286,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -28216,7 +28299,10 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")])
+                        _c("input", {
+                          staticClass: "form-control form-control borde",
+                          attrs: { type: "text", placeholder: "Agregar" }
+                        })
                       ])
                     ])
                   ])
@@ -28228,7 +28314,10 @@ var staticRenderFns = [
                   _vm._v("Estado de Registro")
                 ]),
                 _vm._v(" "),
-                _c("a", { attrs: { href: "" } }, [_vm._v("Agregar")]),
+                _c("input", {
+                  staticClass: "form-control form-control borde",
+                  attrs: { type: "text", placeholder: "Agregar" }
+                }),
                 _c("hr"),
                 _vm._v(" "),
                 _c("h6", { staticStyle: { color: "#FBB829" } }, [
@@ -28425,7 +28514,7 @@ exports = module.exports = __webpack_require__(38)(undefined);
 
 
 // module
-exports.push([module.i, "\nbody {\r\n    background-color: #AAACB2;\n}\nli{\r\n    color: #ffffff;\n}\ntable[class~=\"menu1\"] td{\r\n        padding : 0.2rem;\n}\ndiv[class~=\"tamaño\"]{\r\n    padding:6px;\n}\na{\r\n    color: #666666;\n}\r\n", ""]);
+exports.push([module.i, "\nbody {\r\n    background-color: #AAACB2;\n}\nli{\r\n    color: #ffffff;\n}\ntable[class~=\"menu1\"] td{\r\n        padding : 0.2rem;\n}\ndiv[class~=\"tamaño\"]{\r\n    padding:6px;\n}\ninput[class~=\"borde\"]{\r\n    border: none;\n}\nselect[class~=\"borde\"]{\r\n    border: none;\n}\na{\r\n    color: #666666;\n}\r\n", ""]);
 
 // exports
 
